@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.competitions-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.competition-item {
+  margin: 20px 10px;
+}
