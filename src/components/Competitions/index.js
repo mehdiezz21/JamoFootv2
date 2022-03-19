@@ -1,6 +1,5 @@
 import CompetitionsProvider from "../../states/CompetitionsProvider";
 import Navbar from "../Navbar";
-import SearchBar from "../SearchBar";
 import CompetitionsList from "./CompetitionsList";
 
 
@@ -10,7 +9,6 @@ function Competitions() {
       <CompetitionsProvider>
         <Navbar />
         <div className="container">
-          <SearchBar placeholder="Rechercher par nom..." />
           <CompetitionsList />
         </div>
       </CompetitionsProvider>
