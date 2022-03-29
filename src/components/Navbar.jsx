@@ -15,23 +15,66 @@ const Navbar = () => {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Europe
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">UEFA Champions league</a></li>
+                            <li><a class="dropdown-item" href="#">UEFA Europa league</a></li>
+                            <li><a class="dropdown-item" href="#">UEFA Conference league</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            France
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Ligue 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ligue 2</a></li>
+                            <li><a class="dropdown-item" href="#">Coupe de France</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Angleterre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Premiere League</a></li>
+                            <li><a class="dropdown-item" href="#">Championship</a></li>
+                            <li><a class="dropdown-item" href="#">FA cup</a></li>
+                        </ul>
                     </li>
-                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Espagne
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">LaLigua</a></li>
+                            <li><a class="dropdown-item" href="#">LaLigua 2</a></li>
+                            <li><a class="dropdown-item" href="#">Coupe du Roi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Allemagne
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Bundesliga serie A</a></li>
+                            <li><a class="dropdown-item" href="#">Bundesliga serie B</a></li>
+                            <li><a class="dropdown-item" href="#">Super Cup</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Italie
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">serie A</a></li>
+                            <li><a class="dropdown-item" href="#">serie B</a></li>
+                            <li><a class="dropdown-item" href="#">Coupe d'Italie</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <SearchBar />
