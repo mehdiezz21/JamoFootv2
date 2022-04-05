@@ -1,6 +1,12 @@
+import Navbar from "../Navbar";
+
 function Test() {
     return (
-        <p>p</p>
+        <div>
+            <Navbar />
+            <div className="container">
+            </div>
+        </div>
     );
 }
   
