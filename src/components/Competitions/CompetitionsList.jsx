@@ -10,7 +10,7 @@ const CompetitionsList = () => {
   const [loading, setLoading] = useState(true);
 
   const getCompetitions = async () => {
-    const data = await myApi.fetchCompetitions(2088);
+    const data = await myApi.fetchCompetitions(2081);
     setCompetitions(data ?? []);
     setLoading(false);
   }
