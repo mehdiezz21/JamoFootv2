@@ -1,5 +1,4 @@
 import React from 'react';
-import SearchBar from "./SearchBar.jsx";
 import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
@@ -80,9 +79,6 @@ const Navbar = () => {
                         </li>
                     </div>
                 </ul>
-                <form className="d-flex">
-                    <SearchBar />
-                </form>
                 <img src={logo} alt="" className='logo_nav' />
             </div>
         </div>

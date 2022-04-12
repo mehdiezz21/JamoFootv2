@@ -30,3 +30,9 @@
   max-height: 25px;
   min-height: 25px;
 }
+
+.rec {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+}
