@@ -7,25 +7,40 @@ import {
 import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
-const WL = [
-    { title: 'FIFA World Cup', value: 2000},
-    { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
-]
-
 const EU = [
     { title: 'Champions League', value: 2001},
+    { title: 'Europa League', value: 2146},
+    { title: 'Conference League', value: 2154},
 ]
 
-
-const FD = [
+const FR = [
     { title: 'Ligue 1', value: 2015},
+    { title: 'Ligue 2', value: 2142},
+    { title: 'Coupe de France', value: 2138},
+]
+
+const EN = [
     { title: 'Premiere League', value: 2021},
-    { title: 'Primera Division', value: 2014},
-    { title: 'Bundesliga', value: 2002},
+    { title: 'Championship', value: 2016},
+    { title: 'FA Cup', value: 2055},
+]
+
+const ES = [
+    { title: 'LaLiga', value: 2014},
+    { title: 'LaLiga 2', value: 2077},
+    { title: 'Coupe du Roi', value: 2079},
+]
+
+const DE = [
+    { title: 'Bundesliga', value: 2015},
+    { title: '2. Bundesliga', value: 2004},
+    { title: 'Super Cup', value: 2134},
+]
+
+const IT = [
     { title: 'Serie A', value: 2019},
-    { title: 'Eredivisie', value: 2003},
-    { title: 'Primeira Liga', value: 2017},
+    { title: 'Serie B', value: 2121},
+    { title: 'Coupe d\'Italie', value: 2122},
 ]
 
 

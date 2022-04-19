@@ -8,9 +8,9 @@ import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
 const WL = [
-    { title: 'FIFA World Cup', value: 2000},
-    { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
+    { title: 'FIFA World Cup', value: 1382},
+    { title: 'UEFA Euro', value: 507},
+    { title: 'Copa Libertadores', value: 873},
 ]
 
 const EU = [
@@ -23,9 +23,24 @@ const FD = [
     { title: 'Premiere League', value: 2021},
     { title: 'Primera Division', value: 2014},
     { title: 'Bundesliga', value: 2002},
-    { title: 'Serie A', value: 2019},
-    { title: 'Eredivisie', value: 2003},
-    { title: 'Primeira Liga', value: 2017},
+]
+
+const ES = [
+    
+    { title: 'LaLiga 2', value: 2077},
+    { title: 'Coupe du Roi', value: 2079},
+]
+
+const DE = [
+    
+    { title: '2. Bundesliga', value: 2004},
+    { title: 'Super Cup', value: 2134},
+]
+
+const IT = [
+    
+    { title: 'Serie B', value: 2121},
+    { title: 'Coupe d\'Italie', value: 2122},
 ]
 
 

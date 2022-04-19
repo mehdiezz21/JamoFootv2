@@ -10,7 +10,7 @@ import home from '../media/maison.png'
 const WL = [
     { title: 'FIFA World Cup', value: 2000},
     { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
+    { title: 'Copa Libertadores', value: 873},
 ]
 
 const EU = [
