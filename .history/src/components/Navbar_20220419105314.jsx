@@ -19,30 +19,6 @@ const FR = [
     { title: 'Coupe de France', value: 2138},
 ]
 
-const EN = [
-    { title: 'Premiere League', value: 2021},
-    { title: 'Championship', value: 2016},
-    { title: 'FA Cup', value: 2055},
-]
-
-const ES = [
-    { title: 'LaLiga', value: 2014},
-    { title: 'LaLiga 2', value: 2077},
-    { title: 'Coupe du Roi', value: 2079},
-]
-
-const DE = [
-    { title: 'Bundesliga', value: 2015},
-    { title: '2. Bundesliga', value: 2004},
-    { title: 'Super Cup', value: 2134},
-]
-
-const IT = [
-    { title: 'Serie A', value: 2019},
-    { title: 'Serie B', value: 2121},
-    { title: 'Coupe d\'Italie', value: 2122},
-]
-
 
 const Navbar = () => {
   return (
@@ -95,7 +71,7 @@ const Navbar = () => {
                                 Allemagne
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {DE.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {FR.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
                         <li className="nav-item active dropdown">
@@ -103,7 +79,7 @@ const Navbar = () => {
                                 Italie
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {IT.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {FR.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
                     </div>

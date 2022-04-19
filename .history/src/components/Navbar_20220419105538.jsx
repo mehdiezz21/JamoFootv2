@@ -39,8 +39,8 @@ const DE = [
 
 const IT = [
     { title: 'Serie A', value: 2019},
-    { title: 'Serie B', value: 2121},
-    { title: 'Coupe d\'Italie', value: 2122},
+    { title: 'Serie B', value: 2142},
+    { title: 'Coupe de France', value: 2138},
 ]
 
 

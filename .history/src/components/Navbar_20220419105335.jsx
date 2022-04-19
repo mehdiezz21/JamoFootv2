@@ -19,28 +19,28 @@ const FR = [
     { title: 'Coupe de France', value: 2138},
 ]
 
-const EN = [
-    { title: 'Premiere League', value: 2021},
-    { title: 'Championship', value: 2016},
-    { title: 'FA Cup', value: 2055},
+const FR = [
+    { title: 'Ligue 1', value: 2015},
+    { title: 'Ligue 2', value: 2142},
+    { title: 'Coupe de France', value: 2138},
 ]
 
-const ES = [
-    { title: 'LaLiga', value: 2014},
-    { title: 'LaLiga 2', value: 2077},
-    { title: 'Coupe du Roi', value: 2079},
+const FR = [
+    { title: 'Ligue 1', value: 2015},
+    { title: 'Ligue 2', value: 2142},
+    { title: 'Coupe de France', value: 2138},
 ]
 
-const DE = [
-    { title: 'Bundesliga', value: 2015},
-    { title: '2. Bundesliga', value: 2004},
-    { title: 'Super Cup', value: 2134},
+const FR = [
+    { title: 'Ligue 1', value: 2015},
+    { title: 'Ligue 2', value: 2142},
+    { title: 'Coupe de France', value: 2138},
 ]
 
-const IT = [
-    { title: 'Serie A', value: 2019},
-    { title: 'Serie B', value: 2121},
-    { title: 'Coupe d\'Italie', value: 2122},
+const FR = [
+    { title: 'Ligue 1', value: 2015},
+    { title: 'Ligue 2', value: 2142},
+    { title: 'Coupe de France', value: 2138},
 ]
 
 
