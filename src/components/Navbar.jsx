@@ -22,9 +22,9 @@ const Navbar = () => {
                                 Europe
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">UEFA Champions league</a></li>
-                                <li><a className="dropdown-item" href="#">UEFA Europa league</a></li>
-                                <li><a className="dropdown-item" href="#">UEFA Conference league</a></li>
+                                <li><a className="dropdown-item" href="#">UEFA Champions League</a></li>
+                                <li><a className="dropdown-item" href="#">UEFA Europa League</a></li>
+                                <li><a className="dropdown-item" href="#">UEFA Conference League</a></li>
                             </ul>
                         </li>
                         <li className="nav-item active dropdown">
@@ -42,9 +42,9 @@ const Navbar = () => {
                                 Angleterre
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">Premiere League</a></li>
+                                <li><a className="dropdown-item" href="#">Premier League</a></li>
                                 <li><a className="dropdown-item" href="#">Championship</a></li>
-                                <li><a className="dropdown-item" href="#">FA cup</a></li>
+                                <li><a className="dropdown-item" href="#">FA Cup</a></li>
                             </ul>
                         </li>
                         <li className="nav-item active dropdown">
@@ -52,8 +52,8 @@ const Navbar = () => {
                                 Espagne
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">LaLigua</a></li>
-                                <li><a className="dropdown-item" href="#">LaLigua 2</a></li>
+                                <li><a className="dropdown-item" href="#">LaLiga</a></li>
+                                <li><a className="dropdown-item" href="#">LaLiga 2</a></li>
                                 <li><a className="dropdown-item" href="#">Coupe du Roi</a></li>
                             </ul>
                         </li>
@@ -62,8 +62,8 @@ const Navbar = () => {
                                 Allemagne
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">Bundesliga serie A</a></li>
-                                <li><a className="dropdown-item" href="#">Bundesliga serie B</a></li>
+                                <li><a className="dropdown-item" href="#">Bundesliga</a></li>
+                                <li><a className="dropdown-item" href="#">2. Bundesliga</a></li>
                                 <li><a className="dropdown-item" href="#">Super Cup</a></li>
                             </ul>
                         </li>
@@ -72,8 +72,8 @@ const Navbar = () => {
                                 Italie
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">serie A</a></li>
-                                <li><a className="dropdown-item" href="#">serie B</a></li>
+                                <li><a className="dropdown-item" href="#">Serie A</a></li>
+                                <li><a className="dropdown-item" href="#">Serie B</a></li>
                                 <li><a className="dropdown-item" href="#">Coupe d'Italie</a></li>
                             </ul>
                         </li>
