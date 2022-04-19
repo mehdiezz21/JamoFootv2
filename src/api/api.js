@@ -11,11 +11,10 @@ export const myApi = {
     getTeamsFromCompetition: (id) => footballData.getTeamsFromCompetition({ competitionId: id }).then((data) =>
         JSON.stringify(data)),
 
-    getStandingsFromCompetition: (id, type) => footballData.getStandingsFromCompetition({
+    getStandingsFromCompetition: (id) => footballData.getStandingsFromCompetition({
         competitionId: id,
-        standingType: type,
     }).then((data) =>
-        JSON.stringify(data)),
+        data),
 
     getMatchesFromCompetition: (id, season, day) => footballData.getMatchesFromCompetition({
         competitionId: id,
