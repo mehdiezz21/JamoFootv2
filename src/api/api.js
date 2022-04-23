@@ -6,16 +6,15 @@ export const myApi = {
         data.competitions),
 
     fetchCompetitionsId: (id) => footballData.getCompetition({ id }).then((data) =>
-        JSON.stringify(data)),
+        (data)),
 
     getTeamsFromCompetition: (id) => footballData.getTeamsFromCompetition({ competitionId: id }).then((data) =>
-        JSON.stringify(data)),
+        (data)),
 
-    getStandingsFromCompetition: (id, type) => footballData.getStandingsFromCompetition({
+    getStandingsFromCompetition: (id) => footballData.getStandingsFromCompetition({
         competitionId: id,
-        standingType: type,
     }).then((data) =>
-        JSON.stringify(data)),
+        data),
 
     getMatchesFromCompetition: (id, season, day) => footballData.getMatchesFromCompetition({
         competitionId: id,
@@ -41,16 +40,16 @@ export const myApi = {
     }).then((data) =>
         JSON.stringify(data)),
 
-    getMatchesFromTeam: (id, status) => footballData.getMatchesFromTeam({
+    getMatchesFromTeam: (id) => footballData.getMatchesFromTeam({
         teamId: id,
-        status: status,
     }).then((data) =>
-        JSON.stringify(data)),
-    
+        data),
+    // 
     getTeam: (id) => footballData.getTeam({
         id: id,
-    }).then((data) =>
-        JSON.stringify(data)),
+    }).then((data) => data),
+
+    getTeamTest: () => footballData.getTeam().then((data) => data),
 
     getAreas: () => footballData.getAreas().then((data) =>
         JSON.stringify(data)),
@@ -63,13 +62,10 @@ export const myApi = {
     getPlayer: (id) => footballData.getPlayer({
         id,
     }).then((data) =>
-        JSON.stringify(data)),
+        data),
            
-    getMatchesFromPlayer: (id, dateFrom, dateTo, status) => footballData.getMatchesFromPlayer({
+    getMatchesFromPlayer: (id) => footballData.getMatchesFromPlayer({
         playerId: id,
-        dateFrom,
-        dateTo: dateTo,
-        status: status,
     }).then((data) =>
-        JSON.stringify(data)),                                
+        data),                                
     };
