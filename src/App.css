@@ -10168,3 +10168,30 @@ th {
 .card-title, .card-header {
   color: inherit;
 }
+.competition-item {
+  margin: 20px 10px;
+}
+
+.logo_nav {
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}
+
+.home {
+  width: 25px;
+  max-width: 25px;
+  min-width: 25px;
+  height: 25px;
+  max-height: 25px;
+  min-height: 25px;
+}
+
+.rec {
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+}

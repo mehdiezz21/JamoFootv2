@@ -1,6 +1,6 @@
 import CompetitionsProvider from "../../states/CompetitionsProvider";
 import Navbar from "../Navbar";
-import SearchBar from "../SearchBar";
+import SearchBar from "../SearchBar.jsx";
 import CompetitionsList from "./CompetitionsList";
 
 
@@ -10,7 +10,9 @@ function Competitions() {
       <CompetitionsProvider>
         <Navbar />
         <div className="container">
-          <SearchBar placeholder="Rechercher par nom..." />
+          <form className="d-flex my-2 mx-auto">
+            <SearchBar />
+          </form>
           <CompetitionsList />
         </div>
       </CompetitionsProvider>

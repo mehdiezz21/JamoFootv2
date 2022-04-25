@@ -11,6 +11,7 @@ import Map from './components/Teams/map';
 import Test from './components/Teams/test';
 
 import styles from './App.css';
+import Classement from './components/Classement';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         <Route path="/team/player/:id" element={<Player />} className={styles}/>
         <Route path="/team/favoris" element={<Favoris />} className={styles}/>
         <Route path="/test" element={<Test />} className={styles}/>
+        <Route path="/" element={<Competitions />}/>
+        <Route path="/test" element={<Test />}/>
+        <Route path="/Classement/:id" element={<Classement />}/>
       </Routes>
     </BrowserRouter>
   );
