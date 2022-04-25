@@ -8,24 +8,21 @@ import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
 const WL = [
-    { title: 'FIFA World Cup', value: 2000},
-    { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
+    { title: 'FIFA World Cup', value: 1382},
+    { title: 'Copa Libertadores', value: 873},
+    { title: 'Coupe de France', value: 2138},
 ]
 
 const EU = [
     { title: 'Champions League', value: 2001},
+    { title: 'Europa League', value: 2146},
+    { title: 'Conference League', value: 2154},
 ]
 
-
 const FD = [
-    { title: 'Ligue 1', value: 2015},
     { title: 'Premiere League', value: 2021},
-    { title: 'Primera Division', value: 2014},
-    { title: 'Bundesliga', value: 2002},
-    { title: 'Serie A', value: 2019},
-    { title: 'Eredivisie', value: 2003},
-    { title: 'Primeira Liga', value: 2017},
+    { title: 'Championship', value: 2016},
+    { title: 'FA Cup', value: 2055},
 ]
 
 
@@ -69,6 +66,9 @@ const Navbar = () => {
                         </li>
                     </div>
                 </ul>
+                <form className="d-flex">
+                    <SearchBar />
+                </form>
                 <img src={logo} alt="" className='logo_nav' />
             </div>
         </div>

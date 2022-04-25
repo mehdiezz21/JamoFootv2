@@ -69,6 +69,9 @@ const Navbar = () => {
                         </li>
                     </div>
                 </ul>
+                <form className="d-flex">
+                    <SearchBar />
+                </form>
                 <img src={logo} alt="" className='logo_nav' />
             </div>
         </div>

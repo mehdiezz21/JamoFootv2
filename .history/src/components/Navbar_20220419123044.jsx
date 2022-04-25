@@ -8,9 +8,9 @@ import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
 const WL = [
-    { title: 'FIFA World Cup', value: 2000},
+    { title: 'FIFA World Cup', value: 1382},
     { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
+    { title: 'Copa Libertadores', value: 873},
 ]
 
 const EU = [
@@ -69,6 +69,9 @@ const Navbar = () => {
                         </li>
                     </div>
                 </ul>
+                <form className="d-flex">
+                    <SearchBar />
+                </form>
                 <img src={logo} alt="" className='logo_nav' />
             </div>
         </div>
