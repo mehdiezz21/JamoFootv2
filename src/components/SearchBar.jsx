@@ -14,15 +14,13 @@ const SearchBar = ({ placeholder }) => {
 
   return (
     <>
-      <div className="input-group my-5">
         <input
-          type="text"
-          className="form-control"
+          type="search"
+          className="form-control mx-5 rounded"
           placeholder={placeholder}
           value={state.search}
           onChange={handleChange}
         />
-      </div>
 
       {/* <div>Vous recherchez : {state.search}</div> */}
     </>
