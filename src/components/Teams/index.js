@@ -140,7 +140,7 @@ function Team() {
                     <p>Compétitions actives: </p>
                     {team?.activeCompetitions?.map(act =>
                      ourCompet.includes(act.id)
-                        ? <Link to={`/competition/${act.id}`}> <li key={act.name}>{act.name}</li> </Link>
+                        ? <Link to={`/classement/${act.id}`}> <li key={act.name}>{act.name}</li> </Link>
                         : <li key={act.name}>{act.name}</li>
 
                     )}

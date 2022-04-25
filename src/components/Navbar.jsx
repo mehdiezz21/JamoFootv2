@@ -7,16 +7,6 @@ import {
 import logo from '../media/logo.png';
 import home from '../media/maison.png'
 
-const WL = [
-    { title: 'FIFA World Cup', value: 2000},
-    { title: 'UEFA Euro', value: 2018},
-    { title: 'Copa Libertadores', value: 2152},
-]
-
-const EU = [
-    { title: 'Champions League', value: 2001},
-]
-
 
 const FD = [
     { title: 'Ligue 1', value: 2015},
@@ -31,7 +21,7 @@ const FD = [
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">Jamo'Foot</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,32 +34,19 @@ const Navbar = () => {
                     </li>
                     <div className='d-flex justify-content-between ms-5 mx-auto'>
                         <li className="nav-item active dropdown">
-                            <a className="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Monde
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {WL.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
-                            </ul>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Europe
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {EU.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
-                            </ul>
-                        </li>
-                        <li className="nav-item active dropdown">
                             <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 1ère divisions
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {FD.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {FD.map(competition => <li><Link to={`/classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
+                        <Link to='/team/favoris' className='nav-link'> Favoris </Link>
                     </div>
                 </ul>
-                <img src={logo} alt="" className='logo_nav' />
+                <div>
+                    <img src={logo} alt="" className='logo_nav' />
+                </div>
             </div>
         </div>
     </nav>

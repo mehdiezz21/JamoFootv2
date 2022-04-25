@@ -8,7 +8,6 @@ function Competitions() {
   return (
     <div>
       <CompetitionsProvider>
-        <Navbar />
         <div className="container">
           <form className="d-flex my-2 mx-auto">
             <SearchBar />
