@@ -48,7 +48,7 @@ const Navbar = () => {
                                 Monde
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {WL.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {WL.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -56,7 +56,7 @@ const Navbar = () => {
                                 Europe
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {EU.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {EU.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
                         <li className="nav-item active dropdown">
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 1ère divisions
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {FD.map(competition => <li><Link to={`/team/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
+                                {FD.map(competition => <li><Link to={`/Classement/${competition.value}`} className="dropdown-item"> {competition.title} </Link></li>)}
                             </ul>
                         </li>
                     </div>
