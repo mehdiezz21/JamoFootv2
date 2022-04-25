@@ -5,6 +5,7 @@ import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import useBookmarks from "./useBookmarks";
+import { CopyToClipboard } from "react-copy-to-clipboard/lib/Component";
 
 function Team() {
     const { id } =useParams();
@@ -106,8 +107,10 @@ function Team() {
         )
     }
 
+    const ourCompet = [2015, 2021, 2014, 2002, 2019, 2003, 2017]
+    
     return (
-        <div>
+        <div className="corps">
             <h1>Team</h1>
             <div className="row">
                 <div className="col">
@@ -123,17 +126,30 @@ function Team() {
                 </div>
                 <div className="col-2">
                     <p>Téléphone: {team?.phone}</p>
+                    <CopyToClipboard text={team?.phone}>
+                        <button className="btn btn-primary">Copier le numéro</button>
+                    </CopyToClipboard>
                 </div>
                 <div className="col-2">
                     <p>Email: {team?.email}</p>
+                    <CopyToClipboard text={team?.email}>
+                        <button className="btn btn-primary position-absolute bottom-0">Copier l'email</button>
+                    </CopyToClipboard>
                 </div>
                 <div className="col">
-                    <p>Compétitions actives: {team?.activeCompetitions?.map(act =>
-                    <li key={act.name}>{act.name}</li>
-                    )}</p>
+                    <p>Compétitions actives: </p>
+                    {team?.activeCompetitions?.map(act =>
+                     ourCompet.includes(act.id)
+                        ? <Link to={`/competition/${act.id}`}> <li key={act.name}>{act.name}</li> </Link>
+                        : <li key={act.name}>{act.name}</li>
+
+                    )}
                 </div>
                 <div className="col-auto">
-                    <button onClick={toggleBookmark({id: team?.id, name: team?.name})}>
+                    <button
+                        onClick={toggleBookmark({id: team?.id, name: team?.name})}
+                        className={isBookmarked ? "btn btn-danger" : "btn btn-success"}
+                    >
                         {isBookmarked ? "Retirer des favoris" : "Ajouter aux favoris"}
                     </button>
                 </div>

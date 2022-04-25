@@ -37,6 +37,14 @@
   box-sizing: border-box;
 }
 
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: tomato;
+  color: white;
+  width: 100%;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -57,6 +65,10 @@ body {
   color: #55595c;
   text-align: left;
   background-color: #fff;
+}
+
+.corps {
+  margin-top: 10px;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -193,6 +205,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
 svg {

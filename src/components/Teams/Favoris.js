@@ -11,16 +11,16 @@ function Favoris() {
     )
 
   return (
-      <div>
+      <div className="corps">
         {usersFavoris.map((user) => {
           return (
             user.id ?
-                <div key={user?.id || Math.random()}>
-                <Link to={`/team/${user?.id}`}>{user?.name}</Link>
-                <button onClick={toggleBookmark(user?.id)}>
+                <tr key={user?.id || Math.random()}>
+                <td><Link to={`/team/${user?.id}`}>{user?.name}</Link></td>
+                <td><button className="btn btn-danger" onClick={toggleBookmark(user?.id)}>
                     Retirer des favoris
-                </button>
-                </div>
+                </button></td>
+                </tr>
             : null
           );
         })}

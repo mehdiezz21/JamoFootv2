@@ -1,5 +1,5 @@
 import { Box, Flex, SkeletonText } from "@chakra-ui/react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   useJsApiLoader,
   GoogleMap,
@@ -37,7 +37,6 @@ const locations = [
 
 
 function Map() {
-  const { id } =useParams();
   let navigate = useNavigate();
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: "AIzaSyCW8Rte4o_qXc2eqbLNqCFUU1t01JM6AhM",

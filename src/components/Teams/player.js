@@ -51,7 +51,7 @@ function Player() {
     }
   
     return (
-        <div>
+        <div className="corps">
             <h1>{player?.player?.name}</h1>
             <div className="row">
                 <div className="col-2">
